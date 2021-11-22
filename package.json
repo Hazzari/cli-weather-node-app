@@ -1,0 +1,52 @@
+{
+  "name": "cli-easy-weather",
+  "version": "1.0.0",
+  "description": "Консольное приложение для отображение погоды",
+  "main": "app/weather.js",
+  "bin": {
+    "weather": "app/weather.js"
+  },
+  "os": [
+    "!win32"
+  ],
+  "man": [
+    "./README.md"
+  ],
+  "engines": {
+    "node": ">=16"
+  },
+  "type": "module",
+  "scripts": {
+    "start": "node app/weather.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cli",
+    "weather"
+  ],
+  "author": "Hazzari",
+  "license": "ISC",
+  "homepage": "https://github.com/Hazzari",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Hazzari/cli-easy-weather"
+  },
+  "bugs": {
+    "email": "dev.aleksan@gmail.com",
+    "url": "https://github.com/Hazzari/cli-easy-weather/issues"
+  },
+  "dependencies": {
+    "axios": "^0.24.0",
+    "dedent-js": "^1.0.1",
+    "eslint-config-airbnb": "^19.0.1",
+    "chalk": "^4.1.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.3.0",
+    "eslint-config-node": "^4.1.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.4.1"
+  }
+}
