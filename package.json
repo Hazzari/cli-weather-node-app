@@ -1,5 +1,5 @@
 {
-  "name": "cli-easy-weather",
+  "name": "cli-weather-app",
   "version": "1.0.0",
   "description": "Консольное приложение для отображение погоды",
   "main": "app/weather.js",
@@ -29,11 +29,11 @@
   "homepage": "https://github.com/Hazzari",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Hazzari/cli-easy-weather"
+    "url": "https://github.com/Hazzari/cli-weather-node-app"
   },
   "bugs": {
     "email": "dev.aleksan@gmail.com",
-    "url": "https://github.com/Hazzari/cli-easy-weather/issues"
+    "url": "https://github.com/Hazzari/cli-weather-node-app/issues"
   },
   "dependencies": {
     "axios": "^0.24.0",
