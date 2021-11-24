@@ -6,6 +6,11 @@ const dirPath = join(homedir(), '.weather')
 
 const filePath = join(dirPath, 'data.json')
 
+const TOKEN_DICTIONARY = {
+  token: 'token',
+  city: 'city',
+}
+
 const isExist = async (path) => {
   try {
     await promises.access(path, constants.F_OK)
@@ -38,7 +43,7 @@ const saveKeyValue = async (key, value) => {
 /**
  * Возвращает значение по ключу ищ файла
  * @param key - ключ
- * @returns {String} - значение из файла по ключу
+ * @returns {Promise<undefined|*>} - значение из файла по ключу
  */
 const getKeyValue = async (key) => {
   if (await isExist(filePath)) {
@@ -50,4 +55,4 @@ const getKeyValue = async (key) => {
   }
 }
 
-export { saveKeyValue, getKeyValue }
+export { saveKeyValue, getKeyValue, TOKEN_DICTIONARY }

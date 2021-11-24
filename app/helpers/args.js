@@ -1,6 +1,6 @@
 const getArgs = (args) => {
   const res = {
-    s: false,
+    c: false,
     h: false,
     t: false,
   }
