@@ -4,6 +4,10 @@ import { printError, printHelp, printSuccess } from './services/log.services.js'
 import { saveKeyValue } from './services/storage.service.js'
 
 const saveToken = async (token) => {
+  if (!token.length) {
+    printError('Не передан токен!')
+    return
+  }
   try {
     await saveKeyValue('token', token)
     printSuccess('Token сохранēн')
