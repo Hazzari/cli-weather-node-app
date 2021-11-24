@@ -6,16 +6,17 @@ export const printError = (error) => {
 }
 
 export const printSuccess = (message) => {
-  console.log(chalk.bgGreen(` SUCCESS ${message}`))
+  console.log(` ${chalk.bgGreen('SUCCESS')} - ${message}`)
 }
 
 export const printHelp = () => {
   console.log(
     dedent`${chalk.bgCyan(' HELP ')}
-    Без параметров - вывод погоды
-    -h вывод справки
-    -s [CITY] для установки города
-    -t [API_KEY] для сохранения токена
+    Запуск скрипта без параметров -> вывод погоды
+    args:
+      -h вывод справки
+      -s [CITY] для установки города
+      -t [API_KEY] для сохранения токена
     `
   )
 }

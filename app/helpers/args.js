@@ -2,9 +2,12 @@ const getArgs = (args) => {
   const res = {
     s: false,
     h: false,
+    t: false,
   }
 
   const [, , ...rest] = args
+
+
   rest.forEach((value, index, array) => {
     // проверяем на символ -
     if (value.charAt(0) === '-') {

@@ -37,14 +37,17 @@
   },
   "dependencies": {
     "axios": "^0.24.0",
-    "dedent-js": "^1.0.1",
-    "eslint-config-airbnb": "^19.0.1",
-    "chalk": "^4.1.2"
+    "chalk": "^4.1.2",
+    "dedent-js": "^1.0.1"
   },
   "devDependencies": {
+    "@babel/eslint-parser": "^7.16.3",
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
     "eslint": "^8.3.0",
     "eslint-config-node": "^4.1.0",
     "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^4.0.0",
     "prettier": "^2.4.1"
